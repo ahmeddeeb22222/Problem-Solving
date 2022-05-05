@@ -19,14 +19,13 @@ int main() { IOS
     int x{}, y{}; cin >> x >> y;
     vector<int> a {1, 3, 5, 7, 8, 10, 12};
     vector<int> b {4, 6, 9, 11};
-    vector<int> c {2};
 
-    int counter{}; // if counter is 0 means we didn't find x or y but if it's 1 we found only x or y and if it's 2 we found both
+    int counter{0}; // if counter is 0 means we didn't find x or y but if it's 1 we found only x or y and if it's 2 we found both
     for(int n: a) if(n==x || n==y) counter++;
-    if (counter == 1)      {cout << "NO"; return 0;}
-    else if(counter == 2)  {cout << "YES"; return 0;}
+    if (counter == 1) {cout << "No"; return 0;}
+    if(counter == 2)  {cout << "Yes"; return 0;}
 
     for(int n: b) if(n==x || n==y) counter++;
-    if (counter == 1) {cout << "NO"; return 0;}
-    else if(counter==2) {cout << "YES"; return 0;}
+    if (counter == 1) {cout << "No"; return 0;}
+    if(counter == 2) {cout << "Yes"; return 0;}
 }
