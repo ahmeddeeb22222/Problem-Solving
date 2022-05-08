@@ -19,9 +19,9 @@ int main() { IOS
     int n{}; cin >> n;
 
     int sum{};
-    for(int i{}; i<n; i++) {
+    while(n--) {
         int num{}; cin >> num;
-        sum += abs(num);
+        sum += num;
     }
-    cout << sum;
+    cout << abs(sum);
 }
