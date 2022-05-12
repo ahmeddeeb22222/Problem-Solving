@@ -1,4 +1,4 @@
-                                                    // problem link: https://codeforces.com/problemset/gymProblem/101972/A
+                                                    // problem link: Gym - 350741A
 #include <bits/stdc++.h>
 #define IOS ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
 #define ll long long
